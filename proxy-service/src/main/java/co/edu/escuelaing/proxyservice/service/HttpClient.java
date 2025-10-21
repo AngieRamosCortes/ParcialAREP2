@@ -11,9 +11,6 @@ public class HttpClient {
 
     private static final String USER_AGENT = "Mozilla/5.0";
 
-    /**
-     * Realiza una petición GET a la URL especificada
-     */
     public String get(String urlString) throws Exception {
         URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();

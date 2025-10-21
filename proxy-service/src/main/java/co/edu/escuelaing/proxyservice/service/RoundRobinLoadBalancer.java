@@ -15,11 +15,8 @@ public class RoundRobinLoadBalancer {
         this.servers = new ArrayList<>();
         this.currentIndex = new AtomicInteger(0);
         
-        // Leer las direcciones de los servidores desde variables de entorno
-        String server1 = System.getenv("MATH_SERVICE_1");
         String server2 = System.getenv("MATH_SERVICE_2");
         
-        // Si no están definidas, usar valores por defecto
         if (server1 == null || server1.isEmpty()) {
             server1 = "http://localhost:8081";
         }
@@ -35,14 +32,11 @@ public class RoundRobinLoadBalancer {
         System.out.println("  - " + server2);
     }
 
-    /**
-     * Obtiene el siguiente servidor usando el algoritmo Round Robin
-     */
     public String getNextServer() {
         if (servers.isEmpty()) {
             throw new IllegalStateException("No hay servidores disponibles");
         }
-        
+            
         int index = currentIndex.getAndIncrement() % servers.size();
         return servers.get(index);
     }
