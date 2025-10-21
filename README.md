@@ -6,16 +6,14 @@
 
 ## Descripción del Proyecto
 
-Este proyecto implementa un sistema de microservicios para realizar cálculos matemáticos complejos. La arquitectura está basada en el patrón de Service Proxy con balanceo de carga Round-Robin, desplegada en AWS EC2.
-
-```
+Este proyecto implementa un sistema de microservicios para realizar cálculos matemáticos complejos. La arquitectura está basada en el patrón de Service Proxy con balanceo de carga Round-Robin, para ser desplegada en AWS EC2.
 
 ## Tecnologías Utilizadas
 
 - **Java 17**: Lenguaje de programación
 - **Spring Boot 3.3.0**: Framework para el desarrollo de microservicios
 - **Maven**: Gestión de dependencias y construcción del proyecto
-- **HTML5 + JavaScript**: Cliente web asíncrono
+- **HTML5 + JavaScript**: Cliente web 
 - **AWS EC2**: Despliegue en la nube
 - **Git & GitHub**: Control de versiones
 
@@ -23,7 +21,7 @@ Este proyecto implementa un sistema de microservicios para realizar cálculos ma
 
 ```
 LabApp-main/
-├── math-service/              # Servicio de cálculos matemáticos
+├── math-service/             
 │   ├── src/
 │   │   └── main/
 │   │       ├── java/
@@ -38,7 +36,7 @@ LabApp-main/
 │   │       └── resources/
 │   │           └── application.properties
 │   └── pom.xml
-├── proxy-service/             # Servicio proxy con balanceo Round-Robin
+├── proxy-service/            
 │   ├── src/
 │   │   └── main/
 │   │       ├── java/
@@ -54,7 +52,7 @@ LabApp-main/
 │   │           └── static/
 │   │               └── index.html
 │   └── pom.xml
-├── pom.xml                    # POM padre del proyecto
+├── pom.xml                    
 └── README.md
 ```
 
@@ -65,13 +63,11 @@ LabApp-main/
 1. **Java Development Kit (JDK) 17**
    ```bash
    java -version
-   # Debe mostrar: java version "17.x.x"
    ```
 
 2. **Maven 3.6+**
    ```bash
    mvn -version
-   # Debe mostrar: Apache Maven 3.6.x o superior
    ```
 
 3. **Git**
@@ -81,7 +77,7 @@ LabApp-main/
 
 ### Para Despliegue en AWS
 
-1. Cuenta de AWS Academy o AWS personal
+1. Cuenta de AWS Academy
 2. 3 instancias EC2 (Amazon Linux 2)
 3. Configuración de Security Groups para permitir tráfico en los puertos necesarios
 
@@ -90,7 +86,7 @@ LabApp-main/
 ### Paso 1: Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/ParcialAREP2.git
+git clone https://github.com/AngieRamosCortes/ParcialAREP2
 cd ParcialAREP2
 ```
 
@@ -103,6 +99,7 @@ mvn clean package
 Esto generará los archivos JAR en:
 - `math-service/target/math-service-1.0.0.jar`
 - `proxy-service/target/proxy-service-1.0.0.jar`
+<img width="227" height="132" alt="image" src="https://github.com/user-attachments/assets/ccfd981b-07bb-4914-aec6-12caac5f6d48" />
 
 ### Paso: Acceder a la Aplicación
 
@@ -112,7 +109,13 @@ Abrir en el navegador: `http://localhost:8080`
 
 - **Instancia 1**: Math ServiceOne
 - **Instancia 2**: Math ServiceTwo
-- **Instancia 3**: Proxy Service
+- **Instancia 3**: ProxySpring
+<img width="1365" height="624" alt="image" src="https://github.com/user-attachments/assets/7191f400-fae8-4acf-a521-21da55482938" />
+<img width="1081" height="187" alt="image" src="https://github.com/user-attachments/assets/b8e1488e-be1a-4667-8ee7-243a65814e2d" />
+<img width="1365" height="625" alt="image" src="https://github.com/user-attachments/assets/3d23bb59-ba95-4b60-b310-a5130b5bd48c" />
+<img width="1074" height="183" alt="image" src="https://github.com/user-attachments/assets/6e93a75e-3946-4b31-b58d-9ee3f9fc9963" />
+<img width="1365" height="625" alt="image" src="https://github.com/user-attachments/assets/fd63491e-7bdf-4dd8-84e2-586209750a20" />
+<img width="1365" height="627" alt="image" src="https://github.com/user-attachments/assets/4ba09850-7647-4597-b7af-859fc9fbfd2b" />
 
 **Especificaciones recomendadas:**
 - AMI: Amazon Linux 2 o Ubuntu Server 22.04
@@ -121,10 +124,10 @@ Abrir en el navegador: `http://localhost:8080`
   
 <img width="1365" height="628" alt="image" src="https://github.com/user-attachments/assets/ff85506d-c8ce-432a-a7b8-1f7bdef252fa" />
 
-```
 #### 3. Instalar Java en cada instancia
 
 Conectarse a cada instancia via SSH:
+<img width="1365" height="516" alt="image" src="https://github.com/user-attachments/assets/acd56d66-75e0-4cc0-9891-93e4a1cf8cc5" />
 
 **Para Amazon Linux 2:**
 ```bash
