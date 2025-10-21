@@ -20,40 +20,59 @@ Este proyecto implementa un sistema de microservicios para realizar cálculos ma
 ## Estructura del Proyecto
 
 ```
-LabApp-main/
-├── math-service/             
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       │   └── co/edu/escuelaing/mathservice/
-│   │       │       ├── MathServiceApplication.java
-│   │       │       ├── controller/
-│   │       │       │   └── MathController.java
-│   │       │       ├── service/
-│   │       │       │   └── MathCalculator.java
-│   │       │       └── model/
-│   │       │           └── MathResponse.java
-│   │       └── resources/
-│   │           └── application.properties
-│   └── pom.xml
-├── proxy-service/            
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       │   └── co/edu/escuelaing/proxyservice/
-│   │       │       ├── ProxyServiceApplication.java
-│   │       │       ├── controller/
-│   │       │       │   └── ProxyController.java
-│   │       │       └── service/
-│   │       │           ├── RoundRobinLoadBalancer.java
-│   │       │           └── HttpClient.java
-│   │       └── resources/
-│   │           ├── application.properties
-│   │           └── static/
-│   │               └── index.html
-│   └── pom.xml
-├── pom.xml                    
-└── README.md
+C:.
+│   LICENSE
+│   pom.xml
+│   README.md
+│
+├───math-service
+│   │   pom.xml
+│   │
+│   └───src
+│       └───main
+│           ├───java
+│           │   └───co
+│           │       └───edu
+│           │           └───escuelaing
+│           │               └───mathservice
+│           │                   │   MathServiceApplication.java
+│           │                   │
+│           │                   ├───controller
+│           │                   │       MathController.java
+│           │                   │
+│           │                   ├───model
+│           │                   │       MathResponse.java
+│           │                   │
+│           │                   └───service
+│           │                           MathCalculator.java
+│           │
+│           └───resources
+│                   application.properties
+│
+└───proxy-service
+    │   pom.xml
+    │
+    └───src
+        └───main
+            ├───java
+            │   └───co
+            │       └───edu
+            │           └───escuelaing
+            │               └───proxyservice
+            │                   │   ProxyServiceApplication.java
+            │                   │
+            │                   ├───controller
+            │                   │       ProxyController.java
+            │                   │
+            │                   └───service
+            │                           HttpClient.java
+            │                           RoundRobinLoadBalancer.java
+            │
+            └───resources
+                │   application.properties
+                │
+                └───static
+                        index.html
 ```
 
 ## Prerequisitos
