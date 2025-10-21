@@ -9,6 +9,8 @@
 Este proyecto implementa un sistema de microservicios para realizar cálculos matemáticos complejos. La arquitectura está basada en el patrón de Service Proxy con balanceo de carga Round-Robin, desplegada en AWS EC2.
 
 ```
+<img width="410" height="63" alt="image" src="https://github.com/user-attachments/assets/eff296cf-92b9-40ee-ba66-d0dbd131e003" />
+
 
 ## Tecnologías Utilizadas
 
