@@ -59,6 +59,9 @@ LabApp-main/
 ## Prerequisitos
 
 ### Para Desarrollo Local
+Hemos usado Spring Initializr
+<img width="643" height="276" alt="image" src="https://github.com/user-attachments/assets/9af8e5f1-3eee-4e56-a9e1-d64f5e789c3a" />
+
 
 1. **Java Development Kit (JDK) 17**
    ```bash
@@ -115,7 +118,8 @@ Abrir en el navegador: `http://localhost:8080`
 <img width="1365" height="625" alt="image" src="https://github.com/user-attachments/assets/3d23bb59-ba95-4b60-b310-a5130b5bd48c" />
 <img width="1074" height="183" alt="image" src="https://github.com/user-attachments/assets/6e93a75e-3946-4b31-b58d-9ee3f9fc9963" />
 <img width="1365" height="625" alt="image" src="https://github.com/user-attachments/assets/fd63491e-7bdf-4dd8-84e2-586209750a20" />
-<img width="1365" height="627" alt="image" src="https://github.com/user-attachments/assets/4ba09850-7647-4597-b7af-859fc9fbfd2b" />
+<img width="1077" height="182" alt="image" src="https://github.com/user-attachments/assets/2fbcb016-b795-4973-9009-63a91488e440" />
+
 
 **Especificaciones recomendadas:**
 - AMI: Amazon Linux 2 o Ubuntu Server 22.04
