@@ -118,9 +118,10 @@ Abrir en el navegador: `http://localhost:8080`
 - AMI: Amazon Linux 2 o Ubuntu Server 22.04
 - Tipo: t3.micro (Free Tier eligible)
 - Security Group: Permitir tráfico en puertos
-```
+  
 <img width="1365" height="628" alt="image" src="https://github.com/user-attachments/assets/ff85506d-c8ce-432a-a7b8-1f7bdef252fa" />
 
+```
 #### 3. Instalar Java en cada instancia
 
 Conectarse a cada instancia via SSH:
